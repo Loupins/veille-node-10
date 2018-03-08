@@ -71,12 +71,12 @@ function envoyerMesssage(){
 }
 
 function afficherTableauUtilisateurs(data) {
-	let sChaine = '';
+	let sChaine = '<tr><th colspan="2">Utilisateurs en ligne</th></tr>';
 	for (id in data) {
 		sChaine += '<tr><td>' + id + '</td><td>' + data[id] + '</td></tr>';
 	}
 	let elmListUser = document.getElementById('list_user');
-	elmListUser.innerHTML += sChaine;
+	elmListUser.innerHTML = sChaine;
 }
 
 function afficherMessage(data, moi) {
