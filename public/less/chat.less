@@ -1,4 +1,7 @@
 body {
+	table {
+		border-collapse:collapse;
+	}
 
 	& > h2 {
 		text-align: center;
@@ -14,11 +17,41 @@ body {
 		justify-content: space-around;
 		#list_user {
 			border: 1px solid black;
-			width: 40%;
+			width: 35%;
 			text-align: center;
 			tr {
 				td,th {
 					padding: 5px;
+				}
+			}
+		}
+		& > section {
+			width: 60%;
+			#boiteMessages {
+				border: 1px solid black;
+				table {
+					width: 100%;
+					tr {
+						display: flex;
+						justify-content: space-between;
+						width: 100%;
+						td {
+							padding: 5px;
+							&:nth-child(2) {
+								width: 70%;
+							}
+						}
+					}
+				}
+			}
+			#message_a_transmettre {
+				text-align: center;
+				display: flex;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				justify-content: space-between;
+				input {
+					width: 80%;
 				}
 			}
 		}
